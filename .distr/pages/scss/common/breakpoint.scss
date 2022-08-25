@@ -1,0 +1,84 @@
+// Max width
+@mixin _screen_1900 {
+    @media only screen and (max-width: $screen-w-max) {
+        @content;
+    }
+}
+@mixin _screen_1600 {
+    @media only screen and (max-width: $screen-x-max) {
+        @content;
+    }
+}
+@mixin _screen_1350 {
+    @media only screen and (max-width: $screen-d-max) {
+        @content;
+    }
+}
+@mixin _screen_1200 {
+    @media only screen and (max-width: $screen-t-max) {
+        @content;
+    }
+}
+@mixin _screen_992 {
+    @media only screen and (max-width: $screen-n-max) {
+        @content;
+    }
+}
+@mixin _screen_768 {
+    @media only screen and (max-width: $screen-m-max) {
+        @content;
+    }
+}
+@mixin _screen_576 {
+    @media only screen and (max-width: $screen-a-max) {
+        @content;
+    }
+}
+@mixin _screen_360 {
+    @media only screen and (max-width: $screen-s-max) {
+        @content;
+    }
+}
+
+// Min width
+@mixin screen_1900 {
+    @media only screen and (min-width: $screen-w-min) {
+        @content;
+    }
+}
+@mixin screen_1600 {
+    @media only screen and (min-width: $screen-x-min) {
+        @content;
+    }
+}
+@mixin screen_1350 {
+    @media only screen and (min-width: $screen-d-min) {
+        @content;
+    }
+}
+@mixin screen_1200 {
+    @media only screen and (min-width: $screen-t-min) {
+        @content;
+    }
+}
+@mixin screen_992 {
+    @media only screen and (min-width: $screen-n-min) {
+        @content;
+    }
+}
+@mixin screen_768 {
+    @media only screen and (min-width: $screen-m-min) {
+        @content;
+    }
+}
+@mixin screen_576 {
+    @media only screen and (min-width: $screen-a-min) {
+        @content;
+    }
+}
+@mixin screen_360 {
+    @media only screen and (min-width: $screen-s-min) {
+        @content;
+    }
+}
+
