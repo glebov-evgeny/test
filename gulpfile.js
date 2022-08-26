@@ -64,7 +64,7 @@ gulp.task('js', () => {
 /* Задача для картинок */
 gulp.task('images', function () {
     return gulp.src('./.distr/blocks/**/img/**')
-        .pipe( gulp.dest('./build/assets') );
+        .pipe( gulp.dest('./build/assets/') );
 });
 
 /* Browsersync Server */
@@ -89,6 +89,7 @@ gulp.task('watch', () => {
     global.isWatching = true;
     gulp.watch(["./.distr/blocks/**/*.scss", "./.distr/pages/scss/*.scss", "./.distr/pages/scss/**/*.scss"], gulp.series('sass'));
     gulp.watch("./.distr/blocks/**/*.html", gulp.series('html'));
+    gulp.watch("./.distr/blocks/**/img/**", gulp.series('images'));
     gulp.watch(["./.distr/blocks/**/*.js", "./.distr/pages/*.js", "./.distr/pages/**/*.js"], gulp.series('js'));
     gulp.watch("./config.json", gulp.parallel('html', 'js'));
 });
